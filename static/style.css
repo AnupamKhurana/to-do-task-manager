@@ -1,0 +1,137 @@
+/* Global styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.list-box {
+    background: #fff;
+    padding: 12px;
+    margin-bottom: 18px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+    color: #222;
+    margin-top: 0;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.5rem; }
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Forms */
+form {
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+form.add-list-form,
+form.add-task-form {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+input[type="text"], input[type="hidden"] {
+    padding: 6px;
+    flex: 1 1 65%;
+    max-width: 350px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+form.add-list-form input[type="text"],
+form.add-task-form input[type="text"] {
+    flex: none;
+    width: 100%;
+    margin-right: 0;
+}
+
+button {
+    padding: 6px 10px;
+    background: #0066cc;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    flex: 0 0 auto;
+}
+
+button:hover {
+    background: #005bb5;
+}
+
+/* Delete button subtle style */
+button.delete-btn {
+    background: #e0e0e0;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+button.delete-btn:hover {
+    background: #d5d5d5;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+th, td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #f0f0f0;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #777;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    input[type="text"] {
+        flex: 1 1 100%;
+        margin-right: 0;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    table, th, td {
+        font-size: 13px;
+    }
+}
