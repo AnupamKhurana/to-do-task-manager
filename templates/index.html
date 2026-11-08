@@ -51,5 +51,15 @@
     </div>
     {% endfor %}
 </div>
+    <script>
+        // Log computed styles for titles
+        document.addEventListener('DOMContentLoaded', () => {
+            const titles = document.querySelectorAll('h1, h2, h3');
+            titles.forEach(t => {
+                const style = window.getComputedStyle(t);
+                console.log(`Title ${t.tagName} - font-size: ${style.fontSize}, color: ${style.color}, margin: ${style.marginTop}`);
+            });
+        });
+    </script>
 </body>
 </html>

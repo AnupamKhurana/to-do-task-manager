@@ -1,6 +1,10 @@
 # Todo Task Manager
 
+> **App Root Folder:** `/mnt/1fc0b605-b95c-4190-ba0a-ae87f22cc120/development/to-do-task-manager`
+
+
 A simple todo list web application built with FastAPI, SQLAlchemy, and Jinja2.
+purely Using vibe coding (gpt-oss-20b with kilo in vscode)
 
 ## Features
 
